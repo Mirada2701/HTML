@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 ZAVD</title>
+    <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    caption{
+    text-align: right;
+    }
+    table{
+       background-color: rgb(233, 225, 225);
+        height: 50vh;
+        width: 55vw;
+        border-collapse: collapse;
+    }
+    thead,tfoot{
+        text-align: center;
+        height: 5vh;
+        width: 8vw;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    td{
+        text-align: center;
+        color: white0;
+    }
+    .coll{
+        width: 10vw;
+    }
+    .col-1{
+        width: 15vw;
+        background-color: lightgray;
+    }
+    .col-2{
+        background-color: aqua;
+    }
+    .col-3{
+        background-color: rgb(8, 205, 8);
+    }
+    .col-4{
+        background-color: rgb(255, 217, 1);
+    }
+    .col-5{
+        background-color: red;
+    }
+    .spec-th{
+        color: black;
+    }
+    td:nth-child(1){
+        color: black;
+    }
+    .plus-minus-div{
+            border: 4px solid #fff;
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+            font-size: x-large;
+            margin-left: 3.5vw;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Title table</caption>
+        <colgroup>
+            <col span="1" class="col-1">
+            <col span="1" class="coll col-2">
+            <col span="1" class="coll col-3"> 
+            <col span="1" class="coll col-4"> 
+            <col class="coll col-5">
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="spec-th">SPECIFICATION</th>
+                <th>FREE</th>
+                <th>BASIC</th>
+                <th>STANDART</th>
+                <th>PREMIUM</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th class="spec-th">PRICE</th>
+                <th>$ 0.00</th>
+                <th>$ 9.99</th>
+                <th>$ 19.99</th>
+                <th>$ 29.99</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Lorem ipsum dolor</td>
+                <td><div class="plus-minus-div">+</div></td>
+                <td><div class="plus-minus-div">+</div></td>
+                <td><div class="plus-minus-div">+</div></td>
+                <td><div class="plus-minus-div">+</div></td>
+            </tr>
+            <tr>
+                <td>Ratione deserunt modi</td>
+                <td><div class="plus-minus-div">+</div></td>
+                <td><div class="plus-minus-div">+</div></td>
+                <td><div class="plus-minus-div">+</div></td>
+                <td><div class="plus-minus-div">+</div></td>
+            </tr>
+            <tr>
+                <td>Vel maiores odio</td>
+                <td><div class="plus-minus-div">-</div></td>
+                <td><div class="plus-minus-div">+</div></td>
+                <td><div class="plus-minus-div">+</div></td>
+                <td><div class="plus-minus-div">+</div></td>
+            </tr>
+            <tr>
+                <td>Minus vel aperiam natus</td>
+                <td><div class="plus-minus-div">-</div></td>
+                <td><div class="plus-minus-div">-</div></td>
+                <td><div class="plus-minus-div">+</div></td>
+                <td><div class="plus-minus-div">+</div></td>
+            </tr>
+            <tr>
+                <td>Provid minima sapiente</td>
+                <td><div class="plus-minus-div">-</div></td>
+                <td><div class="plus-minus-div">-</div></td>
+                <td><div class="plus-minus-div">-</div></td>
+                <td><div class="plus-minus-div">+</div></td>
+            </tr>
+            <tr>
+                <td>Evinient eaque excepturi</td>
+                <td><div class="plus-minus-div">-</div></td>
+                <td><div class="plus-minus-div">-</div></td>
+                <td><div class="plus-minus-div">-</div></td>
+                <td><div class="plus-minus-div">+</div></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

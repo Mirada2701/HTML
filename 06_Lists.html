@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <style>
+        h2{
+            font-size: large;
+        }
+        .custom-ul-style{
+            list-style-type: disc;
+            list-style-position: inside;
+            /* padding: 10px; */
+            padding-left: 15px;
+            list-style-image: url(./markers/autumn_16.png);
+
+        }
+        ol{
+            list-style-type: upper-roman;
+        }
+        ol>li{
+            color: red;
+        }
+        ol li::marker{
+            color: aqua;
+            font-weight: bold;
+        }
+        dt{
+            font-weight: bold;
+            color: darkgreen;
+        }
+        dd{
+            color: lightgreen;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        /* .custom-ol-style{
+            list-style-type: none;
+            counter-reset: number;
+        }
+        .custom-ol-style>li::before{
+            content: counter(number) ')';
+            counter-increment: number;
+        } */
+        .custom-ol-style{
+            list-style-type: none;
+            font-style: italic;
+        }
+        .custom-ol-style>li::before{
+            content:' - ';
+            color: brown;
+        }
+        div p span{
+        color: brown;
+    }
+    ol ul{
+        color: green;
+    }
+    ol ul ul{
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>
+            Lorem ipsum dolor sit amet.
+            <ul>
+                <li>
+                    Lorem ipsum dolor sit amet.
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet.
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </li>
+                <li>
+                    Lorem ipsum dolor sit amet.
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </li>            
+            </ul>
+        </li>
+    </ol>
+   
+    <div> 
+        <p>Lorem, ipsum dolor sit amet consectetur 
+            adipisicing elit. Eius, est.</p>      
+        <p>           
+            Lorem ipsum dolor sit amet.
+            <span>Lorem ipsum dolor sit amet.</span>
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+<h2>Multi Level Lists</h2>
+<ol class="custom-ol-style">
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, minus?
+        <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Tenetur, rerum esse!</li>
+            <li>Animi, vero nisi.</li>
+        </ul>
+    </li>
+    
+    <li>Possimus saepe laborum earum repudiandae similique ipsa excepturi debitis architecto.
+        <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Exercitationem ut dolorum velit!</li>
+            <li>Consequuntur, odit iure? Totam?</li>
+            <li>Harum earum fugiat reiciendis.</li>
+        </ul>
+    </li>
+    <li>Incidunt quo, odio consequuntur consectetur mollitia facere molestiae soluta tenetur.</li>
+    <li>Consequuntur quae magnam quibusdam nemo at praesentium animi est dolorem.</li>
+    <li>Ut voluptate dolores quaerat odio sunt, porro alias accusantium quod!</li>
+</ol>
+
+
+
+
+
+
+
+
+
+    <h2>Custom Style</h2>
+<ul class="custom-ul-style">
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+    <li>Repudiandae id nihil modi debitis! Incidunt, laboriosam!</li>
+    <li>Recusandae ab cumque officia esse fuga numquam.</li>
+    <li>Sit, dolores deserunt. Dolore aperiam ut debitis.</li>
+</ul>
+
+
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Dolorem minus aperiam quam excepturi!</li>
+        <li>Neque voluptates ex magnam blanditiis?</li>
+        <li>Quae illo assumenda voluptatum et.</li>
+        <li>Nobis iusto sunt asperiores delectus?</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol start="10" reversed>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Eum facilis delectus nihil tempora.</li>
+        <li>Voluptas alias rerum eaque libero.</li>
+        <li>Quas vel modi aut illo!</li>
+        <li>Quod quam tempora labore corrupti!</li>
+        <li>Quod quam tempora labore corrupti!</li>
+        <li>Quod quam tempora labore corrupti!</li>
+        <li value="25">Quod quam tempora labore corrupti!</li>
+        <li>Quod quam tempora labore corrupti!</li>
+        <li>Quod quam tempora labore corrupti!</li>
+        <li>Quod quam tempora labore corrupti!</li>
+    </ol>
+
+    <h2>Definiton List</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HTML is a standardized language for hypertext markup of documents for viewing web pages in a browser. Web browsers receive an HTML document from a server via HTTP/HTTPS protocols or open it from a local disk, then interpret the code into an interface that will be displayed on the monitor screen.</dd>
+        <dt>CSS</dt>
+        <dd>CSS is a formal language for decoding and describing the appearance of a document written using a markup language. It can also be applied to any XML document, such as SVG or XUL.</dd>
+    </dl>
+    
+
+</body>
+</html>

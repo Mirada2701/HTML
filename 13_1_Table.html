@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: separate;
+            border-spacing: 10px;
+            background-color: #aaaaaa;
+            background-image: url(./bg/bg_1.jpg);
+            empty-cells: hide;
+        }
+        tr{
+            background-color: #cccccc;
+            background-image: url(./bg/bg_2.jpg);
+        }
+        th{
+            border: 1px solid red;
+        }
+        td{
+            border: 1px solid blue;
+        }
+        #unique{
+            width: 30vw;
+            height: 20vh;
+            text-align: center;
+            vertical-align: bottom;
+            background-color: #eeeeee;
+            background-image: url(./bg/bg_3.jpg);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- th  td -->
+    <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+    </tr>
+    <tr>
+        <td>lorem1</td>
+        <td id="unique">lorem2</td>
+        <td>lorem3</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>lorem5</td>
+        <td></td>
+    </tr>
+
+
+    </table>
+</body>
+</html>

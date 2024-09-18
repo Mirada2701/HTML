@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ol{
+            font-weight: 600;
+            list-style-type: none;
+        }
+        ul{
+            font-weight: 200;
+        }
+        ol li{
+            margin-left: 10px;
+        }
+        #winter li{
+            list-style-image: url(./markers/winter_16.png);
+        }
+        ol>li::before{
+            content: '>';
+        }
+        #spring li{
+            list-style-image: url(./markers/spring_16.png);
+        }
+        #summer li{
+            list-style-image: url(./markers/summer_16.png);
+        }
+        #autumn li{
+            list-style-image: url(./markers/autumn_16.png);
+        }
+    </style>
+</head>
+<body>
+    <h2>Seasons</h2>
+    <ol>
+        <li id="winter"> &nbsp;Winter
+            <ul>
+                <li>December</li>
+                <li>January</li>
+                <li>February</li>
+            </ul>
+        </li>
+        <li id="spring"> &nbsp;Spring
+            <ul>
+                <li>March</li>
+                <li>April</li>
+                <li>May</li>
+            </ul>
+        </li>
+        <li id="summer"> &nbsp;Summer
+            <ul>
+                <li>June</li>
+                <li>July</li>
+                <li>August</li>
+            </ul>
+        </li>
+        <li id="autumn"> &nbsp;Autumn
+            <ul>
+                <li>September</li>
+                <li>October</li>
+                <li>November</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>
